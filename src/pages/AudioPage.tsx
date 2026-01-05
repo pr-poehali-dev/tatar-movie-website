@@ -8,24 +8,10 @@ export default function AudioPage() {
   const audioCartoons = [
     {
       id: 1,
-      title: 'Акыллы тилке',
-      description: 'Акыллы тилке турында татар халык әкияте. Хәйләгәрлек һәм акыл турында.',
-      duration: '8 мин',
-      plays: '1.2K',
-    },
-    {
-      id: 2,
-      title: 'Алтын балык',
-      description: 'Могҗизалы алтын балык турында хикәя. Теләк тормышның аңлылыгы турында.',
-      duration: '12 мин',
-      plays: '2.5K',
-    },
-    {
-      id: 3,
-      title: 'Өч кыз',
-      description: 'Өч апа-сеңел турында әкият. Ярдәм итү һәм игелек турында.',
-      duration: '15 мин',
-      plays: '980',
+      title: 'Аудиомультфильм',
+      description: 'Татар телендә кызыклы хикәя. Тыңлап аңларга һәм күзаллау сәләтен үстерергә.',
+      duration: '10 мин',
+      audioId: '1rSz5zXyaVM18cwYg4fE7N1qzPiQKaRX4',
     },
   ];
 
@@ -58,19 +44,19 @@ export default function AudioPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-4">
-                  <Button size="lg" className="gap-2">
-                    <Icon name="Play" size={20} />
-                    Тыңларга
-                  </Button>
+                <div className="space-y-4">
+                  <audio
+                    controls
+                    className="w-full"
+                    preload="metadata"
+                  >
+                    <source src={`https://drive.google.com/uc?export=download&id=${audio.audioId}`} />
+                    Ваш браузер не поддерживает аудио.
+                  </audio>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Icon name="Clock" size={16} />
                       {audio.duration}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Icon name="Users" size={16} />
-                      {audio.plays}
                     </div>
                   </div>
                 </div>

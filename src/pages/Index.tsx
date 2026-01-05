@@ -13,7 +13,7 @@ export default function Index() {
       description: 'Татар халык әкияте буенча анимацион фильм. Урман рухы Шүрәле турында кызыклы хикәя.',
       duration: '12 мин',
       year: '2024',
-      image: 'https://cdn.poehali.dev/projects/81de8e51-3825-475c-b85e-b3985c5dc8d8/files/7a538934-9015-4899-958b-722b17fd74f7.jpg',
+      videoId: '1ykSeezXdDOXCCUhYI4yWvJ8EP63EyCT_',
       category: 'Халык әкиятләре',
     },
     {
@@ -22,7 +22,7 @@ export default function Index() {
       description: 'Борынгы татар легендасы. Елга буенда яшәүче матур Су анасы турында хикәя.',
       duration: '15 мин',
       year: '2024',
-      image: 'https://cdn.poehali.dev/projects/81de8e51-3825-475c-b85e-b3985c5dc8d8/files/b7474fe3-736c-41a5-8964-8c8bcdb721da.jpg',
+      videoId: '1-vTkWPUjMk6LMwye6tB9s4R3AdGK4pYz',
       category: 'Легендалар',
     },
     {
@@ -31,7 +31,7 @@ export default function Index() {
       description: 'Тату дус Акбай эт турында кызыклы һәм шаян хикәя. Дуслык кадере турында.',
       duration: '10 мин',
       year: '2023',
-      image: 'https://cdn.poehali.dev/projects/81de8e51-3825-475c-b85e-b3985c5dc8d8/files/79ab9f8c-9b8d-46bd-909d-66e4d7f5982a.jpg',
+      videoId: '15A9Us1VzkNfPuy6dTKrnm4sNf1npt5PZ',
       category: 'Хайваннар турында',
     },
   ];
@@ -52,20 +52,15 @@ export default function Index() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cartoons.map((cartoon) => (
-            <Card key={cartoon.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={cartoon.image}
-                  alt={cartoon.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            <Card key={cartoon.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="relative overflow-hidden aspect-video bg-black">
+                <iframe
+                  src={`https://drive.google.com/file/d/${cartoon.videoId}/preview`}
+                  className="w-full h-full"
+                  allow="autoplay"
+                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <Button size="lg" className="gap-2">
-                    <Icon name="Play" size={20} />
-                    Карарга
-                  </Button>
-                </div>
-                <Badge className="absolute top-3 right-3 bg-primary/90 backdrop-blur-sm">
+                <Badge className="absolute top-3 right-3 bg-primary/90 backdrop-blur-sm z-10">
                   {cartoon.category}
                 </Badge>
               </div>
