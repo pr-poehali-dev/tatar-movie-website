@@ -8,9 +8,8 @@ export default function AudioPage() {
   const audioCartoons = [
     {
       id: 1,
-      title: 'Аудиомультфильм',
-      description: 'Татар телендә кызыклы хикәя. Тыңлап аңларга һәм күзаллау сәләтен үстерергә.',
-      duration: '10 мин',
+      title: 'Чикләнчек',
+      duration: '20 мин',
       audioId: '1rSz5zXyaVM18cwYg4fE7N1qzPiQKaRX4',
     },
   ];
@@ -36,7 +35,6 @@ export default function AudioPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <CardTitle className="text-xl mb-2">{audio.title}</CardTitle>
-                    <CardDescription>{audio.description}</CardDescription>
                   </div>
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Icon name="Headphones" size={28} className="text-primary" />
@@ -45,14 +43,11 @@ export default function AudioPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <audio
-                    controls
-                    className="w-full"
-                    preload="metadata"
-                  >
-                    <source src={`https://drive.google.com/uc?export=download&id=${audio.audioId}`} />
-                    Ваш браузер не поддерживает аудио.
-                  </audio>
+                  <iframe
+                    src={`https://drive.google.com/file/d/${audio.audioId}/preview`}
+                    className="w-full h-20"
+                    allow="autoplay"
+                  />
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Icon name="Clock" size={16} />

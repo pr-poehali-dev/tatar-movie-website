@@ -13,7 +13,7 @@ export default function Footer() {
             <span className="font-semibold">Татар Мультфильмнары</span>
           </div>
           <p className="text-sm text-muted-foreground text-center">
-            © 2024 - Татар телен өйрәнү һәм популярлаштыру проекты
+            © 2026 - Татар телен өйрәнү һәм үстерү проекты. Мөслимә Адиева
           </p>
           <div className="flex gap-2">
             <Button variant="ghost" size="icon">

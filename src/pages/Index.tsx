@@ -9,30 +9,27 @@ export default function Index() {
   const cartoons = [
     {
       id: 1,
-      title: 'Шүрәле',
-      description: 'Татар халык әкияте буенча анимацион фильм. Урман рухы Шүрәле турында кызыклы хикәя.',
-      duration: '12 мин',
-      year: '2024',
+      title: 'Фыфыф турында әкият',
+      duration: '11 мин',
+      year: '2026',
       videoId: '1ykSeezXdDOXCCUhYI4yWvJ8EP63EyCT_',
-      category: 'Халык әкиятләре',
+      category: 'әкият',
     },
     {
       id: 2,
-      title: 'Су анасы',
-      description: 'Борынгы татар легендасы. Елга буенда яшәүче матур Су анасы турында хикәя.',
-      duration: '15 мин',
-      year: '2024',
+      title: 'Аю баласы Зирәккәй турында әкият',
+      duration: '17 мин',
+      year: '2026',
       videoId: '1-vTkWPUjMk6LMwye6tB9s4R3AdGK4pYz',
-      category: 'Легендалар',
+      category: 'әкият',
     },
     {
       id: 3,
-      title: 'Акбай',
-      description: 'Тату дус Акбай эт турында кызыклы һәм шаян хикәя. Дуслык кадере турында.',
-      duration: '10 мин',
-      year: '2023',
+      title: 'Тиз вакыт',
+      duration: '2 мин',
+      year: '2026',
       videoId: '15A9Us1VzkNfPuy6dTKrnm4sNf1npt5PZ',
-      category: 'Хайваннар турында',
+      category: 'мультфильм',
     },
   ];
 
@@ -43,7 +40,7 @@ export default function Index() {
       <div className="container mx-auto px-4 py-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-            Татар телендә мультфильмнар
+            Мультфильмнар
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Милләтебезнең теле, мәдәнияте һәм тарихы турында кызыклы хикәяләр
@@ -66,7 +63,6 @@ export default function Index() {
               </div>
               <CardHeader>
                 <CardTitle className="text-xl">{cartoon.title}</CardTitle>
-                <CardDescription className="line-clamp-2">{cartoon.description}</CardDescription>
               </CardHeader>
               <CardFooter className="flex justify-between items-center text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">

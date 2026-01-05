@@ -39,49 +39,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="BookOpen" size={32} className="text-primary" />
-                </div>
-                <CardTitle>Өйрәнү</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Татар телен табигый рәвештә үзләштерү
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="TrendingUp" size={32} className="text-primary" />
-                </div>
-                <CardTitle>Үстерү</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Сөйләм телен һәм сүзлек запасын арттыру
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Heart" size={32} className="text-primary" />
-                </div>
-                <CardTitle>Популярлаштыру</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Милләтебезне уятыру һәм телгә кызыксыну арттыру
-                </p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
 
