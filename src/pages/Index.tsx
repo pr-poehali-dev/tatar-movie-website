@@ -42,7 +42,7 @@ export default function Index() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
             Мультфильмнар
           </h1>
-          <p className="text-xl md:text-2xl text-foreground font-medium max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-foreground font-medium max-w-4xl mx-auto leading-relaxed text-justify hyphens-auto">
             Татар телен, татар халкының мәдәниятен һәм гореф-гадәтләрен, балалар һәм өлкәннәрнең үзара мөнәсәбәтләрен саклау, үстерү максатына юнәлдерелгән мультфильмнар бүген шактый киң таралыш алды. Аларның күбесе тыңлап аңлау технологиясе аша татар теле күнекмәләрен үстерүне, сөйләшү нигезләрен формалаштыруны күздә тота.
           </p>
         </div>
