@@ -42,9 +42,14 @@ export default function Index() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
             Мультфильмнар
           </h1>
-          <p className="text-xl md:text-2xl text-foreground font-medium max-w-4xl mx-auto leading-relaxed text-justify hyphens-auto">
-            Безнең проект – туган телебезне саклау һәм үстерү өчен күңелле һәм уңайлы бер юл. Сайтыбызда җыелган татар телендәге видео- һәм аудиохикәяләр ярдәмендә яңа буын телебезне табигый итеп үзләштерергә, аңларга һәм сөйләшергә өйрәнә ала.
-          </p>
+          <div className="text-xl md:text-2xl text-foreground font-medium max-w-4xl mx-auto leading-relaxed text-justify hyphens-auto space-y-4">
+            <p>
+              Татар телен, татар халкының мәдәниятен һәм гореф-гадәтләрен, балалар һәм өлкәннәрнең үзара мөнәсәбәтләрен саклау, үстерү максатына юнәлдерелгән мультфильмнар бүген шактый киң таралыш алды. Аларның күбесе тыңлап аңлау технологиясе аша татар теле күнекмәләрен үстерүне, сөйләшү нигезләрен формалаштыруны күздә тота.
+            </p>
+            <p>
+              Безнең проект – туган телебезне саклау һәм үстерү өчен күңелле һәм уңайлы бер юл. Сайтыбызда җыелган татар телендәге видео- һәм аудиохикәяләр ярдәмендә яңа буын телебезне табигый итеп үзләштерергә, аңларга һәм сөйләшергә өйрәнә ала.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
