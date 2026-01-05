@@ -26,7 +26,7 @@ export default function AboutPage() {
                 Безнең максат
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4 text-lg leading-relaxed">
+            <CardContent className="space-y-4 text-xl md:text-2xl leading-relaxed">
               <p>
                 Бу проект татар телен өйрәнү, үстерү һәм популярлаштыру максатыннан чыгып эшләнә.
                 Без балаларның һәм өлкәннәрнең татар телендә мультфильмнар карап, аудиохикәяләр
