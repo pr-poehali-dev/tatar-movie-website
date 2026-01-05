@@ -9,7 +9,7 @@ export default function Navigation() {
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: 'Мультфильмлар', icon: 'Film' },
+    { path: '/', label: 'Мультфильмнар', icon: 'Film' },
     { path: '/audio', label: 'Аудиомультфильмнар', icon: 'Headphones' },
     { path: '/about', label: 'Проект турында', icon: 'Info' },
   ];
